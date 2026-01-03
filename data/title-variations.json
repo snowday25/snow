@@ -1,0 +1,74 @@
+{
+  "prefixes": [
+    "Breaking:",
+    "Alert:",
+    "Update:",
+    "Urgent:",
+    "Weather Alert:",
+    "Storm Update:",
+    "Latest:",
+    "Developing:",
+    "Weather Bulletin:",
+    "Emergency:"
+  ],
+  "action_words": [
+    "Braces for",
+    "Prepares for",
+    "Faces",
+    "Expecting",
+    "Anticipating",
+    "Hit by",
+    "Under Threat from",
+    "Gears Up for",
+    "Confronts",
+    "Awaits"
+  ],
+  "intensity_modifiers": [
+    "Major",
+    "Significant",
+    "Severe",
+    "Massive",
+    "Historic",
+    "Dangerous",
+    "Extreme",
+    "Powerful",
+    "Heavy",
+    "Intense"
+  ],
+  "weather_events": [
+    "Winter Storm",
+    "Snow Event",
+    "Snowstorm",
+    "Winter Weather System",
+    "Snow System",
+    "Winter Weather Event",
+    "Arctic Blast",
+    "Winter Weather",
+    "Snow and Ice Event",
+    "Winter Storm System"
+  ],
+  "time_references": [
+    "This Week",
+    "Tonight",
+    "This Weekend",
+    "Coming Days",
+    "Next 24 Hours",
+    "Tomorrow",
+    "Overnight",
+    "Early Morning",
+    "Later Today",
+    "Approaching"
+  ],
+  "suffixes": [
+    "- Latest Updates",
+    "- What to Expect",
+    "- Full Forecast",
+    "- Breaking Details",
+    "- Critical Information",
+    "- Safety Alert",
+    "- Timing and Impacts",
+    "- Residents Warned",
+    "- Official Warning",
+    "- Important Details"
+  ]
+}
