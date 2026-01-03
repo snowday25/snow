@@ -1,0 +1,28 @@
+{
+  "action_verbs": [
+    "Braces", "Prepares", "Faces", "Expects", "Anticipates", "Readies",
+    "Gears Up", "Stands Ready", "Gets Set", "Mobilizes", "Alerts"
+  ],
+  "intensity_words": [
+    "Major", "Significant", "Heavy", "Intense", "Severe", "Dangerous",
+    "Massive", "Historic", "Unprecedented", "Extreme", "Critical",
+    "Substantial", "Considerable", "Notable", "Remarkable"
+  ],
+  "time_frames": [
+    "This Weekend", "Tonight", "Tomorrow", "This Week", "Incoming",
+    "Approaching", "Imminent", "Soon", "Next 24 Hours", "Coming Days"
+  ],
+  "impact_words": [
+    "Travel Hazardous", "Schools Close", "Emergency Declared", "Roads Treacherous",
+    "Power Outages Expected", "Whiteout Conditions", "Blizzard Conditions",
+    "Life-Threatening", "Crippling", "Paralyzing"
+  ],
+  "action_words": [
+    "Alert", "Warning", "Watch", "Advisory", "Notice", "Bulletin",
+    "Announcement", "Update", "Forecast", "Prediction"
+  ],
+  "weather_descriptors": [
+    "Snowstorm", "Winter Storm", "Snow Event", "Weather System",
+    "Storm System", "Arctic Blast", "Winter Weather", "Snow Squalls"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "blizzard": {
+    "titles": [
+      "{location} Braces for Major Blizzard: {inches}\" of Snow Expected",
+      "Blizzard Warning Issued for {location} - {inches}\" Snow Forecast",
+      "Major Snowstorm Threatens {location} with {inches}\" Accumulation",
+      "Winter Storm Alert: {location} Could See {inches}\" of Snow",
+      "{location} Residents Prepare as Blizzard Approaches",
+      "Breaking: Massive Blizzard Targets {location}",
+      "Historic Blizzard Warning for {location} - {inches}\" Possible",
+      "{location} Under Blizzard Emergency: {inches}\" Snow Incoming",
+      "Dangerous Blizzard Conditions Expected in {location}",
+      "Major Winter Storm: {location} Faces {inches}\" Blizzard"
+    ],
+    "intro": "A major blizzard is bearing down on {location}, with forecasters predicting {inches} inches of snow and dangerous conditions.",
+    "keywords": ["blizzard", "winter storm", "snow emergency", "travel advisory", "whiteout conditions"]
+  },
+  "heavy_snow": {
+    "titles": [
+      "Heavy Snow Warning for {location}: {inches}\" Expected",
+      "{location} Forecast: {inches}\" of Snow on the Way",
+      "Winter Weather Advisory: {location} to See {inches}\" Snow",
+      "Significant Snowfall Expected in {location} - {inches}\" Forecast",
+      "{location} Snow Alert: {inches}\" Accumulation Likely",
+      "Major Snow Event Targets {location}",
+      "Winter Storm Brings {inches}\" to {location}",
+      "{location} Prepares for Heavy Snowfall",
+      "Intense Snow Expected: {location} Could Get {inches}\"",
+      "Breaking: {location} Snow Forecast Increases to {inches}\""
+    ],
+    "intro": "{location} is under a heavy snow warning as {inches} inches of accumulation are expected over the next 24-48 hours.",
+    "keywords": ["heavy snow", "winter weather", "snow advisory", "accumulation", "winter conditions"]
+  },
+  "lake_effect": {
+    "titles": [
+      "Lake Effect Snow Hits {location}: {inches}\" Possible",
+      "{location} Faces Lake Effect Snow Event - {inches}\" Expected",
+      "Intense Lake Effect Snow Targets {location}",
+      "{location} Under Lake Effect Snow Warning",
+      "Lake Effect Snowstorm Impacts {location} Region",
+      "Breaking: Lake Effect Bands Produce {inches}\" in {location}",
+      "{location} Braces for Lake Effect Snow Onslaught",
+      "Major Lake Effect Event: {location} Could See {inches}\"",
+      "Dangerous Lake Effect Snow Pummels {location}",
+      "{location} Residents Face Lake Effect Snow Emergency"
+    ],
+    "intro": "Lake effect snow is pounding {location}, with localized bands potentially dropping {inches} inches in some areas.",
+    "keywords": ["lake effect", "snow bands", "localized snow", "heavy accumulation", "snow squalls"]
+  },
+  "nor_easter": {
+    "titles": [
+      "Nor'easter Targets {location} with {inches}\" of Snow",
+      "{location} Prepares for Major Nor'easter",
+      "Powerful Nor'easter to Dump {inches}\" on {location}",
+      "{location} Braces for Nor'easter Impact",
+      "Winter Nor'easter Threatens {location}",
+      "Historic Nor'easter Approaches {location}",
+      "Massive Coastal Storm Brings {inches}\" to {location}",
+      "{location} Under Nor'easter Warning: {inches}\" Expected",
+      "Breaking: Major Nor'easter Targets {location}",
+      "Dangerous Nor'easter to Slam {location} with {inches}\" Snow"
+    ],
+    "intro": "A powerful nor'easter is moving toward {location}, bringing the potential for {inches} inches of snow and strong winds.",
+    "keywords": ["nor'easter", "coastal storm", "winter storm", "blizzard conditions", "coastal flooding"]
+  },
+  "general_snow": {
+    "titles": [
+      "{location} Snow Forecast: {inches}\" on the Way",
+      "Winter Weather Coming to {location}",
+      "{location} Set for Significant Snowfall",
+      "Snow Alert for {location}: {inches}\" Expected",
+      "{location} Weather: Major Snow Event Approaching",
+      "Breaking: {inches}\" of Snow Forecast for {location}",
+      "{location} Braces for Winter Storm",
+      "Significant Snow Heading to {location}",
+      "{location} Residents Should Prepare for {inches}\" Snow",
+      "Winter Storm Watch: {location} Could See {inches}\""
+    ],
+    "intro": "Winter weather is headed to {location}, with forecasters calling for {inches} inches of snow.",
+    "keywords": ["snow forecast", "winter weather", "snow event", "weather alert", "winter storm"]
+  }
+}
