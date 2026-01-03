@@ -1,0 +1,105 @@
+/* Snow Alerts Plugin - Public/Frontend Styles */
+
+/* Windy Map Container */
+.snow-alerts-windy-map {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.snow-alerts-windy-map h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.snow-alerts-windy-map iframe {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+/* Related Articles Section */
+.snow-alerts-related {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-left: 4px solid #0073aa;
+    border-radius: 4px;
+}
+
+.snow-alerts-related h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.snow-alerts-related ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.snow-alerts-related li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.snow-alerts-related li:last-child {
+    border-bottom: none;
+}
+
+.snow-alerts-related a {
+    color: #0073aa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.snow-alerts-related a:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+/* Weather Alert Badges (if used in content) */
+.weather-alert-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.weather-alert-badge.severe {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.weather-alert-badge.moderate {
+    background: #ff9800;
+    color: #fff;
+}
+
+.weather-alert-badge.minor {
+    background: #ffc107;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .snow-alerts-windy-map,
+    .snow-alerts-related {
+        padding: 15px;
+    }
+    
+    .snow-alerts-windy-map iframe {
+        height: 350px !important;
+    }
+}
