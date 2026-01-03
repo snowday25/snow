@@ -120,14 +120,41 @@ class Snow_Alerts_Advanced_SEO {
      */
     public static function create_indexnow_key_file() {
         $key = self::get_indexnow_key();
-        $file_path = ABSPATH . $key . '.txt';
+        
+        // Validate key is safe for filename
+        if (!preg_match('/^[a-f0-9]{32}$/', $key)) {
+            error_log('Snow Alerts: Invalid IndexNow key format');
+            return false;
+        }
+        
+        // Ensure we're writing to the correct location
+        $root_path = ABSPATH;
+        $file_path = $root_path . $key . '.txt';
+        
+        // Verify path is within ABSPATH to prevent directory traversal
+        $real_root = realpath($root_path);
+        $real_file = realpath(dirname($file_path));
+        
+        if ($real_file !== $real_root && $real_file !== false) {
+            error_log('Snow Alerts: IndexNow key file path validation failed');
+            return false;
+        }
+        
+        // Check if directory is writable
+        if (!is_writable($root_path)) {
+            error_log('Snow Alerts: Root directory is not writable for IndexNow key file');
+            return false;
+        }
         
         if (!file_exists($file_path)) {
             $result = file_put_contents($file_path, $key);
             if ($result === false) {
                 error_log('Snow Alerts: Failed to create IndexNow key file at ' . $file_path);
+                return false;
             }
         }
+        
+        return true;
     }
     
     /**

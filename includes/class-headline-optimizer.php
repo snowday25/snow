@@ -93,6 +93,9 @@ class Snow_Alerts_Headline_Optimizer {
      * Extract event type from headline
      */
     private static function extract_event($headline) {
+        // Sanitize input before regex matching
+        $headline = strip_tags($headline);
+        
         // Common event patterns
         $patterns = array(
             '/winter storm/i' => 'Winter Storm',

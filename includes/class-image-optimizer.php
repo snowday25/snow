@@ -48,7 +48,8 @@ class Snow_Alerts_Image_Optimizer {
      * Fetch image from Unsplash API
      */
     private static function fetch_from_unsplash($post_id, $location_data, $api_key) {
-        $city_name = isset($location_data['city']) ? $location_data['city'] : 'winter';
+        // Sanitize city name before using in query
+        $city_name = isset($location_data['city']) ? sanitize_text_field($location_data['city']) : 'winter';
         $query = 'winter storm snow ' . $city_name;
         
         $url = add_query_arg(array(

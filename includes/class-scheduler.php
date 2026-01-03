@@ -38,7 +38,7 @@ class Snow_Alerts_Scheduler {
             'post_content' => $article_data['content'],
             'post_status' => 'publish',
             'post_type' => 'post',
-            'post_author' => 1,
+            'post_author' => get_current_user_id() > 0 ? get_current_user_id() : 1,
         );
         
         // Add excerpt if provided, otherwise use optimized meta

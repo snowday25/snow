@@ -50,21 +50,34 @@ class Snow_Alerts_SEO_Optimizer {
         // FAQ schema (NEW)
         $faq_schema = get_post_meta($post->ID, '_snow_alerts_faq_schema', true);
         
-        // Output all schemas
+        // Output all schemas (JSON is already encoded, but validate it's valid JSON)
         if ($article_schema) {
-            echo '<script type="application/ld+json">' . $article_schema . '</script>' . "\n";
+            // Validate JSON before output
+            $decoded = json_decode($article_schema);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                echo '<script type="application/ld+json">' . $article_schema . '</script>' . "\n";
+            }
         }
         
         if ($forecast_schema) {
-            echo '<script type="application/ld+json">' . $forecast_schema . '</script>' . "\n";
+            $decoded = json_decode($forecast_schema);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                echo '<script type="application/ld+json">' . $forecast_schema . '</script>' . "\n";
+            }
         }
         
         if ($breadcrumb_schema) {
-            echo '<script type="application/ld+json">' . $breadcrumb_schema . '</script>' . "\n";
+            $decoded = json_decode($breadcrumb_schema);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                echo '<script type="application/ld+json">' . $breadcrumb_schema . '</script>' . "\n";
+            }
         }
         
         if ($faq_schema) {
-            echo '<script type="application/ld+json">' . $faq_schema . '</script>' . "\n";
+            $decoded = json_decode($faq_schema);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                echo '<script type="application/ld+json">' . $faq_schema . '</script>' . "\n";
+            }
         }
     }
     
