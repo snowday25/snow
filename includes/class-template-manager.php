@@ -34,9 +34,11 @@ class Snow_Alerts_Template_Manager {
             $json = file_get_contents($template_file);
             $templates = json_decode($json, true);
             
-            if ($templates && is_array($templates)) {
+            if (json_last_error() === JSON_ERROR_NONE && $templates && is_array($templates)) {
                 self::$templates = $templates;
                 return self::$templates;
+            } else {
+                error_log('Snow Alerts: Failed to parse article-templates.json: ' . json_last_error_msg());
             }
         }
         
@@ -62,9 +64,11 @@ class Snow_Alerts_Template_Manager {
             $json = file_get_contents($variations_file);
             $variations = json_decode($json, true);
             
-            if ($variations && is_array($variations)) {
+            if (json_last_error() === JSON_ERROR_NONE && $variations && is_array($variations)) {
                 self::$title_variations = $variations;
                 return self::$title_variations;
+            } else {
+                error_log('Snow Alerts: Failed to parse title-variations.json: ' . json_last_error_msg());
             }
         }
         
@@ -89,9 +93,11 @@ class Snow_Alerts_Template_Manager {
             $json = file_get_contents($descriptions_file);
             $descriptions = json_decode($json, true);
             
-            if ($descriptions && is_array($descriptions)) {
+            if (json_last_error() === JSON_ERROR_NONE && $descriptions && is_array($descriptions)) {
                 self::$description_variations = $descriptions;
                 return self::$description_variations;
+            } else {
+                error_log('Snow Alerts: Failed to parse description-variations.json: ' . json_last_error_msg());
             }
         }
         

@@ -27,6 +27,8 @@ except ImportError:
 
 
 # Configuration
+# NOTE: SimpleMaps URL contains a version number (1.92) which may need to be updated
+# Check https://simplemaps.com/data/us-cities for the latest version
 SIMPLEMAPS_URL = "https://simplemaps.com/static/data/us-cities/1.92/basic/simplemaps_uscities_basicv1.92.zip"
 MIN_POPULATION = 100000
 OUTPUT_FILE = "../data/us-cities-100k.json"

@@ -83,8 +83,13 @@ class Snow_Alerts_Content_Generator {
             $body = wp_remote_retrieve_body($response);
             $data = json_decode($body, true);
             
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                error_log('Snow Alerts: Failed to parse OpenAI API response: ' . json_last_error_msg());
+                return false;
+            }
+            
             if (!isset($data['choices']) || !isset($data['choices'][0]) || !isset($data['choices'][0]['message'])) {
-                error_log('Snow Alerts: Invalid OpenAI API response');
+                error_log('Snow Alerts: Invalid OpenAI API response structure');
                 return false;
             }
             
