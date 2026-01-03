@@ -1,0 +1,79 @@
+/* Snow Alerts Admin Styles */
+
+.snow-alerts-dashboard {
+    max-width: 1200px;
+}
+
+.snow-alerts-dashboard h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.snow-alerts-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.stat-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #646970;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d2327;
+    line-height: 1.2;
+}
+
+.form-table th {
+    width: 200px;
+}
+
+.form-table td input[type="text"],
+.form-table td input[type="url"],
+.form-table td select {
+    width: 100%;
+    max-width: 500px;
+}
+
+.snow-alerts-dashboard table.wp-list-table {
+    margin-top: 15px;
+}
+
+.snow-alerts-dashboard .submit {
+    margin-top: 0;
+}
+
+/* Notices */
+.snow-alerts-dashboard .notice {
+    margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .snow-alerts-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-box {
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 24px;
+    }
+}
